@@ -5,6 +5,8 @@
  */
 package br.edu.fatecfranca.exe0;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author daniel.pires
@@ -30,7 +32,12 @@ public class Teste {
         obj1.mostrar();
     
         // treinar: crie um outro obj2 e faça conforme fizemos
-        Carro obj2 = new Carro("Palio", 2013, 0, false);
+        String auxModelo = JOptionPane.showInputDialog("Informe o modelo");
+        int auxAno = Integer.parseInt(JOptionPane.showInputDialog("Informe o ano"));
+        float auxVel = Float.parseFloat(JOptionPane.showInputDialog("Informe a vel"));
+        int resp = JOptionPane.showConfirmDialog(null, "Carro está ligado?");
+        boolean auxMotor = (resp == JOptionPane.OK_OPTION) ;
+        Carro obj2 = new Carro(auxModelo, auxAno, auxVel, auxMotor);
         // chamar os métodos
         obj2.mostrar();
         obj2.ligar();
@@ -41,6 +48,10 @@ public class Teste {
         obj2.mostrar();
         obj2.desligar();
         obj2.mostrar();
+        
+        Carro obj3 = new Carro(); // exemplifica o uso do construtor sem parâmetro
+        obj3.ano = 2016;
+        obj3.modelo = "Onix";
     }
     
 }
