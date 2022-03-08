@@ -28,6 +28,6 @@ public class Cliente {
     
      public void mostrar(){
         JOptionPane.showMessageDialog(null, "Nro conta: " + this.nroConta + 
-                " Nome: " + this.nome + " Saldo " + this.saldo); 
+                " Nome: " + this.nome + " Saldo " + this.saldo)aaaaaaaaaaaaaaaaaaaaa; 
     }
 }
