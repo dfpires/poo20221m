@@ -1,6 +1,6 @@
 package br.edu.fatecfranca.exe0;
 import java.util.ArrayList;
-public class Niver {
+public final class Niver {
     private int dia;
     private String mes;
     // construtores
