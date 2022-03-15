@@ -37,11 +37,11 @@ public class Testa {
         objCartao2.saque(600, "1234");
         objCartao2.mostra();
         
-        Calendar c2 = Calendar.getInstance();
-	c2.set(Calendar.YEAR, 2021);
-	c2.set(Calendar.MONTH, Calendar.MARCH);
-	c2.set(Calendar.DAY_OF_MONTH, 15);
-        objCartao2.setValidade(c2.getTime());
+        c = Calendar.getInstance();
+	c.set(Calendar.YEAR, 2021);
+	c.set(Calendar.MONTH, Calendar.MARCH);
+	c.set(Calendar.DAY_OF_MONTH, 15);
+        objCartao2.setValidade(c.getTime());
         objCartao2.saque(100, "1234");
         objCartao2.mostra();
     }
