@@ -7,7 +7,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="tb_score")
 public class Score {
-
+	// chave primária composta
 	@EmbeddedId
 	private ScorePK id = new ScorePK();
 	
