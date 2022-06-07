@@ -9,19 +9,6 @@ public class ScoreDTO {
 		
 	}
 	
-	public ScoreDTO(Long movieId, String email, Double score) {
-		super();
-		this.movieId = movieId;
-		this.email = email;
-		this.score = score;
-	}
-	
-	public ScoreDTO(ScoreDTO scoreDTO) {
-		this.movieId = scoreDTO.getMovieId();
-		this.email = scoreDTO.getEmail();
-		this.score = scoreDTO.getScore();
-	}
-	
 	public Long getMovieId() {
 		return movieId;
 	}

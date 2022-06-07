@@ -1,5 +1,7 @@
 package br.edu.fatecfranca.movie.dtos;
 
+import br.edu.fatecfranca.movie.entities.Movie;
+
 public class MovieDTO {
 
 	private Long id;
@@ -21,12 +23,12 @@ public class MovieDTO {
 		this.image = image;
 	}
 	
-	public MovieDTO(MovieDTO movieDTO) {
-		this.id = movieDTO.getId();
-		this.title = movieDTO.getTitle();
-		this.score = movieDTO.getScore();
-		this.count = movieDTO.getCount();
-		this.image = movieDTO.getImage();
+	public MovieDTO(Movie movie) {
+		this.id = movie.getId();
+		this.title = movie.getTitle();
+		this.score = movie.getScore();
+		this.count = movie.getCount();
+		this.image = movie.getImage();
 	}
 	
 	public Long getId() {
